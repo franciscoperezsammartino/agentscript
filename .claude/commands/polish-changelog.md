@@ -1,10 +1,17 @@
 Polish the draft CHANGELOG entry for the VS Code extension.
 
+> **Note:** Run this command before `/rebuild-vsix`. The `prepackage` script runs
+> `check-changelog.mjs`, which requires the new version to have a CHANGELOG entry.
+
+> **All shell commands must be run from the repository root.**
+
 ## Steps
 
 1. Read `packages/vscode/CHANGELOG.md`.
 
-2. Locate the **topmost versioned section** — the first heading that matches the pattern `## [X.Y.Z] - DATE`. This is the draft entry added by the automated release workflow. Do NOT touch any other sections.
+2. Locate the **topmost versioned section** — the first heading that matches the pattern
+   `## [X.Y.Z]` (the `- DATE` suffix is optional). This is the draft entry added by the
+   automated release workflow. Do NOT touch any other sections.
 
 3. Rewrite every entry under that section into clear, user-facing language:
    - Write from the perspective of the end user ("You can now…", "Fixed an issue where…", "The X option now…").
@@ -15,6 +22,9 @@ Polish the draft CHANGELOG entry for the VS Code extension.
    - `### Added` — new features and capabilities visible to users
    - `### Fixed` — bug fixes
    - `### Changed` — behaviour changes, renames, removals, or dependency bumps that affect users
+
+   If the draft contains multiple `### Changed` blocks (or multiple blocks of any subsection),
+   merge them into a single deduplicated block under that heading before writing back.
 
 5. Remove entries that are **purely internal** and have no user-facing impact. Entries to remove include:
    - Version bump commits (`chore: bump version`, `chore(release): …`)
