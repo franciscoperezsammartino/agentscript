@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [2.2.5] - 2026-05-06
+
+> :pencil: Review and rewrite the entries below into user-facing language before merging.
+
+### Added
+
+### Fixed
+
+### Changed
+
+- 0cab12d feat(vscode): add automated release workflow and bootstrap config
+
+---
+_lsp-server: 2.2.25 → 2.2.25 (basis for version bump)_
+
 ## [2.4.0] - 2026-5-1
 
 ### Added
