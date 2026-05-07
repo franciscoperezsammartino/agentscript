@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [2.2.3] - 2026-05-07
+
+> :pencil: Review and rewrite the entries below into user-facing language before merging.
+
+### Added
+
+### Fixed
+
+### Changed
+
+<!-- git commits -->
+- 794ca59 fix(compiler): escape special characters in StringLiteral compilation (@W-21981545) (#260) (#15)
+- 5371432 refactor(language): extract TypedMapParser into its own file (#16)
+
+---
+_lsp-server: 2.2.14 → 2.2.25 (basis for version bump)_
+
 ## [2.4.0] - 2026-5-1
 
 ### Added
