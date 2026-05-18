@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
+## [2.4.1] - 2026-05-18
+
+### Added
+
+- Validation for `elif` and nested `if` statements, which are not currently supported in Agent Script syntax.
+
+### Fixed
+
+- The lint rule for `ActionBlock` now correctly enforces that a `target` property is specified.
+- Fixed incorrect parsing when parentheses are unbalanced in expressions.
+
 ## [2.4.0] - 2026-5-1
 
 ### Added
